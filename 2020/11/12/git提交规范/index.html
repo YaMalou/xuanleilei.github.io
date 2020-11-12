@@ -6,18 +6,23 @@
     
 
     
-    <title>Archive: 2020/11 | 墨生麾</title>
+    <title>git提交规范 | 墨生麾</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="轩辕,xuan,XUAN,xuanyuan,XUANYUAN,墨生麾">
-<meta property="og:type" content="website">
-<meta property="og:title" content="墨生麾">
-<meta property="og:url" content="http://example.com/archives/2020/11/index.html">
+    <meta name="keywords" content="git" />
+    
+    <meta name="description" content="格式：1type(scope) : subject ( 1 ) type（必须） : commit 的类别，只允许使用下面几个标识：  feat : 新功能   fix : 修复bug   docs : 文档改变   style : 代码格式改变     refactor : 某个已有功能重构 perf : 性能优化   test : 增加测试   build : 改变了build工具 如 gru">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git提交规范">
+<meta property="og:url" content="http://example.com/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/index.html">
 <meta property="og:site_name" content="墨生麾">
-<meta property="og:description" content="轩辕,xuan,XUAN,xuanyuan,XUANYUAN,墨生麾">
+<meta property="og:description" content="格式：1type(scope) : subject ( 1 ) type（必须） : commit 的类别，只允许使用下面几个标识：  feat : 新功能   fix : 修复bug   docs : 文档改变   style : 代码格式改变     refactor : 某个已有功能重构 perf : 性能优化   test : 增加测试   build : 改变了build工具 如 gru">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-12T08:39:38.000Z">
+<meta property="article:modified_time" content="2020-11-12T08:52:49.955Z">
 <meta property="article:author" content="XUAN">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
     
 
@@ -145,64 +150,191 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive: 2020/11
+    uncategorized
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-git提交规范" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2020" class="archive-year"><i class="icon fa fa-calendar-o"></i>2020</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://example.com/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2020-11-12T08:39:38.000Z" itemprop="datePublished">2020-11-12</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/">git提交规范</a>
+        git提交规范
         </h1>
     
 
-        <p class="article-excerpt">
-            格式：1type(scope) : subject
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/" class="article-date">
+       <time datetime="2020-11-12T08:39:38.000Z" itemprop="datePublished">2020-11-12</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/" class="article-date">
+     <time datetime="2020-11-12T08:52:49.955Z" itemprop="dateModified">2020-11-12</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/git/" rel="tag">git</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <h1 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type(scope) : subject</span><br></pre></td></tr></table></figure>
+<p>( 1 ) type（必须） : commit 的类别，只允许使用下面几个标识：</p>
+<ul>
+<li>feat : 新功能  </li>
+<li>fix : 修复bug  </li>
+<li>docs : 文档改变  </li>
+<li>style : 代码格式改变    </li>
+<li>refactor : 某个已有功能重构</li>
+<li>perf : 性能优化  </li>
+<li>test : 增加测试  </li>
+<li>build : 改变了build工具 如 grunt换成了 npm  </li>
+<li>revert : 撤销上一次的 commit  </li>
+<li>chore : 构建过程或辅助工具的变动  </li>
+</ul>
+<p>( 2 ) scope（可选） : 用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。</p>
+<p>( 3 ) subject（必须） : commit 的简短描述，不超过50个字符。<br>commitizen 是一个撰写合格 Commit message 的工具，<br>遵循 Angular 的提交规范。</p>
+<h2 id="安装commitizen"><a href="#安装commitizen" class="headerlink" title="安装commitizen"></a>安装commitizen</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g commitizen</span><br></pre></td></tr></table></figure>
+<p>进入项目文件夹，运行如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">commitizen init cz-conventional-changelog --save --save-exact</span><br></pre></td></tr></table></figure>
+<p>用 git cz 命令取代 git commit（先使用git add），这时会出现如下选项：</p>
+<p>（ 1 ）选择 type<br>（ 2 ）填写 scope（选填）<br>（ 3 ）填写 subject</p>
+<h1 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h1><h2 id="type-description"><a href="#type-description" class="headerlink" title="type: description"></a>type: description</h2><ul>
+<li><ol>
+<li>type 类型<br>type 是 commit 的类别，只允许如下几种标识：</li>
+</ol>
+<ul>
+<li>fix: 修复bug  </li>
+<li>add: 新功能  </li>
+<li>update: 更新  </li>
+<li>style : 代码格式改变  </li>
+<li>test: 增加测试代码  </li>
+<li>revert: 撤销上一次的commit  </li>
+<li>build: 构建工具或构建过程等的变动，如：gulp 换成了 webpack，webpack 升级等</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>description<br>description 是对本次提交的简短描述。不超过50个字符。推荐以动词开头，如： 设置、修改、增加、删减、撤销等</li>
+</ol>
+</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://example.com/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/" data-id="ckhelius00000rvb7an3u6zxl" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "XUAN"
+        },
+        "headline": "git提交规范",
+        "image": "http://example.com",
+        "keywords": "git",
+        "genre": "",
+        "datePublished": "2020-11-12",
+        "dateCreated": "2020-11-12",
+        "dateModified": "2020-11-12",
+        "url": "http://example.com/2020/11/12/git提交规范/",
+        "description": "格式：1type(scope) : subject
 ( 1 ) type（必须） : commit 的类别，只允许使用下面几个标识：
 
 feat : 新功能  
@@ -212,68 +344,23 @@ style : 代码格式改变
 refactor : 某个已有功能重构
 perf : 性能优化  
 test : 增加测试  
-build : 改变了build工具 如 gru
-        </p>
-    </div>
+build : 改变了build工具 如 gru",
+        "wordCount": 160
+    }
+</script>
+
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2020/11/12/Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/2020/11/12/Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/markdown.png)" alt="Markdown的基本语法" class="thumbnail-image"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://example.com/2020/11/12/Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2020-11-12T07:50:09.000Z" itemprop="datePublished">2020-11-12</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2020/11/12/Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">Markdown的基本语法</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            1.标题1.前面带几个#号就是 h 几标题
-1234567891011# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题
-
-一级标题二级标题三级标题四级标题五级标题六级标题
-
-
-2.列表（无序列表， 有序列表）123456789101112131415- 列表一- 列表二- 列表三* 列表一* 列表二* 列表三- 列表一- 列表二- 列表三1. 
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
 
-    </div></section>
+    
+    </section>
 
 
 
@@ -335,6 +422,19 @@ build : 改变了build工具 如 gru
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2020/11/12/Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Markdown的基本语法</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -479,11 +579,13 @@ build : 改变了build工具 如 gru
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://example.com/2020/11/12/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
