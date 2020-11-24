@@ -234,7 +234,19 @@
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">contact.$:1表示数组中筛选条件和前面query条件中的一样</span><br><span class="line">&gt; db.account.find(&#123;contact: &#123;$gt: &#39;Alabama&#39;&#125;&#125;,&#123;_id:0, name:1, &quot;contact.$&quot;:1&#125;)</span><br><span class="line">&#123; &quot;name&quot; : &quot;jeck&quot;, &quot;contact&quot; : [ &quot;US&quot; ] &#125;</span><br><span class="line">&#123; &quot;name&quot; : &quot;karen&quot;, &quot;contact&quot; : [ &quot;Beijing&quot; ] &#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="更新操作"><a href="#更新操作" class="headerlink" title="更新操作"></a>更新操作</h1></li>
+<h1 id="三、更新文档"><a href="#三、更新文档" class="headerlink" title="三、更新文档"></a>三、更新文档</h1></li>
+<li><p>db.collection.update()</p>
+</li>
+<li><p>db.collection.findAndModify()</p>
+</li>
+<li><p>db.collection.save()</p>
+</li>
+<li><p>更新文档操作符</p>
+</li>
+<li><p>更新多个文档</p>
+<h2 id="3-1-db-lt-collection-gt-update-lt-query-gt-lt-update-gt-lt-options-gt"><a href="#3-1-db-lt-collection-gt-update-lt-query-gt-lt-update-gt-lt-options-gt" class="headerlink" title="3.1 db.&lt;collection&gt;.update(&lt;query&gt;, &lt;update&gt;, &lt;options&gt;)"></a>3.1 db.&lt;collection&gt;.update(&lt;query&gt;, &lt;update&gt;, &lt;options&gt;)</h2><p>&lt;query&gt;文档定义了更新操作时筛选文档的条件,与上一节find()中的query是一样的<br>&lt;update&gt;文档提供了更新内容<br>&lt;options&gt;文档声明了一些更新操作的参数</p>
+<h3 id="更新整篇文档"><a href="#更新整篇文档" class="headerlink" title="更新整篇文档"></a>更新整篇文档</h3><p>db.collection.update()<br>表达式:db.&lt;collection&gt;.update(&lt;query&gt;, &lt;update&gt;, &lt;options&gt;)<br>如果&lt;update&gt;文档中不包含任何更新操作符，db.collection.update()将会使用&lt;update&gt;文档直接替换集合中符合&lt;query&gt;文档筛选条件的文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">修改xuan账户中的余额</span><br><span class="line"> &gt; db.account.update(&#123;name:&#39;xuan&#39;&#125;, &#123;name: &#39;xuan&#39;, balance: 123&#125;)</span><br><span class="line"> WriteResult(&#123; &quot;nMatched&quot; : 1, &quot;nUpserted&quot; : 0, &quot;nModified&quot; : 1 &#125;)</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
